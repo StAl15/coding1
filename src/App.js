@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+/** @jsxImportSource @emotion/react */
+import tw from "twin.macro";
+import {GroupedAutoComplete} from "./components/GroupedAutoComplete/GroupedAutoComplete";
+
+export const top100Films = [
+    {title: 'The Shawshank Redemption', year: 1994},
+    {title: 'The Godfather', year: 1972},
+    {title: 'The Godfather: Part II', year: 1974},
+    {title: 'The Dark Knight', year: 2008},
+    {title: '12 Angry Men'},
+    {title: "Schindler's List", year: 1993},
+    {title: 'Pulp Fiction', year: 1994},
+    {
+        title: 'The Lord of the Rings: The Return of the King',
+        year: 2003,
+    }]
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div tw="p-5">
+            <GroupedAutoComplete data={top100Films}/>
+        </div>
+    );
 }
 
 export default App;
