@@ -160,6 +160,11 @@ module.exports = {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      graySmText: '#95999D',
+      blueText: '#4D9FDB',
+      bgWhite: '#DEE8F5',
+      bgBeige: '#F3F3F4',
+
     }),
     columns: {
       auto: 'auto',
