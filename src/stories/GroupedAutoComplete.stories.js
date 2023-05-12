@@ -20,9 +20,5 @@ export const Primary = {
     },
 };
 
-// export const Secondary = {
-//     render: () => <GroupedAutoComplete data={top100Films}/>
-// };
-
 
 

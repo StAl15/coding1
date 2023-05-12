@@ -1,4 +1,6 @@
 /** @type { import('@storybook/react').Preview } */
+import {GlobalStyles} from "twin.macro";
+
 const preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
@@ -10,5 +12,15 @@ const preview = {
     },
   },
 };
+
+export const decorators = [
+  Story => (
+      <>
+        <GlobalStyles />
+        <Story />
+      </>
+  ),
+]
+
 
 export default preview;
