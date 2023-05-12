@@ -164,6 +164,7 @@ module.exports = {
       blueText: '#4D9FDB',
       bgWhite: '#DEE8F5',
       bgBeige: '#F3F3F4',
+      redBorder : '#dc2625'
 
     }),
     columns: {

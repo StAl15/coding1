@@ -7,7 +7,8 @@ export const ItemOption = ({parts, isSubtitle = false}) => {
             {parts.map((part, index) => (
                 <span
                     key={part.id}
-                    css={[isSubtitle ? tw`text-sm text-graySmText` : tw``, part.highlight && tw`font-semibold`]}
+                    css={[isSubtitle && tw`text-sm text-graySmText`,
+                        part.highlight && tw`font-semibold`]}
                 >
                     {part.text}
                 </span>
